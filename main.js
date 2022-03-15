@@ -63,7 +63,7 @@ button.addEventListener('click',function(){
 })
 
 button.addEventListener('click', function(){
-    if( (radioButton.isChecked)){
+    if( !(radioButton.isChecked)){
         radioButton.classList.remove('is-invalid');
         radioButton.classList.add('is-valid');
         radioButton.nextElementSibling.className = 'valid-feedback';
